@@ -1,6 +1,8 @@
-# StylingDemo
+# ProjecStarter
 
-Java FX GUI Styling with CSS
+ 
+![](https://github.com/melvincabatuan/JavaFXProjectStarterDemo/blob/master/Capture1.PNG)
 
-## Sample design:
-![](https://github.com/melvincabatuan/StylingDemo/blob/master/Capture1.PNG)
+![](https://github.com/melvincabatuan/JavaFXProjectStarterDemo/blob/master/Capture2.PNG)
+
+![](https://github.com/melvincabatuan/JavaFXProjectStarterDemo/blob/master/Capture3.PNG)
