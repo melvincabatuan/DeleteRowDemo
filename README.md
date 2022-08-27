@@ -1,4 +1,4 @@
-# ProjecStarter
+# ProjectStarter
 
  
 ![](https://github.com/melvincabatuan/JavaFXProjectStarterDemo/blob/master/Capture1.PNG)
