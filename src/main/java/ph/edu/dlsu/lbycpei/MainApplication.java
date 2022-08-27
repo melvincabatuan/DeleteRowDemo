@@ -14,7 +14,7 @@ public class MainApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 1024, 720);
         scene.getStylesheets().add("stylesheet.css");
         // Reference: https://docs.oracle.com/javase/8/javafx/api/javafx/scene/doc-files/cssref.html
-        stage.setTitle("Read CSV into TableView Demo");
+        stage.setTitle("Project Starter Demo");
         stage.setScene(scene);
         stage.show();
     }

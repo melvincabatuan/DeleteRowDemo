@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b21b94b-5015-482b-b476-db95149becb7" name="Changes" comment="" />
+    <list default="true" id="9b21b94b-5015-482b-b476-db95149becb7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/background_demo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ECE_CpE_Thesis_Groups_2nd_Term_AY2021_2022.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/ECE_CpE_Thesis_Groups_2nd_Term_AY2021_2022.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/output.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpei/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpei/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpei/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpei/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/background_old.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ph/edu/dlsu/lbycpei/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ph/edu/dlsu/lbycpei/main-view.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +29,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -29,6 +45,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2DtBQCK7FQ5EZ7ZiVYcvuiFSHnh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,7 +54,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/workspace/DeleteRowDemo",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/workspace/ProjectStarterDemo",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -46,7 +64,7 @@
   <component name="RunManager">
     <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ph.edu.dlsu.lbycpei.MainApplication" />
-      <module name="OpenCsvDemo" />
+      <module name="ProjectStarterDemo" />
       <option name="PROGRAM_PARAMETERS" value=" " />
       <extension name="coverage">
         <pattern>

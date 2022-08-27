@@ -1,15 +1,15 @@
 package ph.edu.dlsu.lbycpei;
 
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.SelectionMode;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
@@ -119,10 +119,10 @@ public class MainController implements Initializable {
 
     public void onRefreshClick() {
         csvHandler.loadCsv();
-        tableView.getItems().setAll(csvHandler.getDatabase());
+        tableView.setItems(csvHandler.getDatabase());
     }
 
-    public void deleteRecord() throws IOException {
+    public void deleteRecord() {
         System.out.println("Delete Clicked!!!");
         // Get selected row
         if (!selectedIDs.isEmpty()) {
@@ -131,7 +131,28 @@ public class MainController implements Initializable {
             csvHandler.deleteSelected(selectedIDs);
             // Refresh TableView
             onRefreshClick();
+        } else {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Warning");
+            alert.setHeaderText("There is no selected rows!");
+            alert.setContentText("Please choose one or more (CTRL+Click) rows.");
+
+            alert.showAndWait();
         }
     }
 
+    public void searchRecord() {
+        TextInputDialog dialog = new TextInputDialog("Design");
+        dialog.setTitle("Search Thesis Title");
+        dialog.setHeaderText("Input the keyword related to your search");
+        dialog.setContentText("Keyword:");
+        Optional<String> result = dialog.showAndWait();
+        result.ifPresent(this::searchTableTitle);
+    }
+
+    private void searchTableTitle(String keyword) {
+        FilteredList<ThesisRecord> filteredList = new FilteredList<>(csvHandler.getDatabase(), p -> true);//Pass the data to a filtered list
+        filteredList.setPredicate(p -> p.getTitle().toLowerCase().contains(keyword.toLowerCase().trim()));
+        tableView.setItems(filteredList);//Set the table's items using the filtered list
+    }
 }

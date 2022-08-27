@@ -35,9 +35,9 @@
    <HBox alignment="CENTER" prefHeight="34.0" prefWidth="984.0" spacing="40.0">
       <children>
          <Button fx:id="addRecordButton" alignment="CENTER" mnemonicParsing="false" onAction="#addRecord" text="Add Record" />
-         <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#onRefreshClick" text="Refresh" />
          <Button mnemonicParsing="false" onAction="#deleteRecord" text="Delete" />
-         <Button mnemonicParsing="false" text="Search" />
+         <Button mnemonicParsing="false" onAction="#searchRecord" text="Search" />
+         <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#onRefreshClick" text="Refresh" />
       </children>
    </HBox>
 </VBox>
