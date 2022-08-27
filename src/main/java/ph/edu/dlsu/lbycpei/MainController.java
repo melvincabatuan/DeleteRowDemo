@@ -126,17 +126,24 @@ public class MainController implements Initializable {
         System.out.println("Delete Clicked!!!");
         // Get selected row
         if (!selectedIDs.isEmpty()) {
-            System.out.println("ID Selected!!!");
-            // Delete from csv file
-            csvHandler.deleteSelected(selectedIDs);
-            // Refresh TableView
-            onRefreshClick();
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setTitle("Confirmation");
+            alert.setHeaderText("The selected data will be permanently deleted.");
+            alert.setContentText("Are you ok with this?");
+            Optional<ButtonType> result = alert.showAndWait();
+            if (result.isPresent() && result.get() == ButtonType.OK){
+                // Delete from csv file
+                csvHandler.deleteSelected(selectedIDs);
+                // Refresh TableView
+                onRefreshClick();
+            } else {
+                alert.close();
+            }
         } else {
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Warning");
             alert.setHeaderText("There is no selected rows!");
             alert.setContentText("Please choose one or more (CTRL+Click) rows.");
-
             alert.showAndWait();
         }
     }

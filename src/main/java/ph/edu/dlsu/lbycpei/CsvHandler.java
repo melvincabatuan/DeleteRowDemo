@@ -19,7 +19,7 @@ import java.util.Arrays;
 
 public class CsvHandler {
 
-    public static final String CSV_FILENAME = "data/ECE_CpE_Thesis_Groups_2nd_Term_AY2021_2022.csv";
+    public static final String CSV_FILENAME = "data/thesis_list.csv";
     public static final String[] HEADER = {"Thesis Title", "Grp", "Trm", "SY", "No.", "Members",
             "Adviser", "Chair of Panel", "Panelist1", "Panelist2", "Status"};
     private ObservableList<ThesisRecord> database;
